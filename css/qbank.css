@@ -1,0 +1,586 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+.page01 {
+    height: 610px;
+    width: 100%;
+    background-image: url(../images/qbank-page1.jpg);
+    background-size: cover;
+}
+.page01 .nav {
+    height: 90px;
+    width: 100%;
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.page01 .nav p {
+    font-size: 45px;
+    margin-left: 20px;
+    transform: translate(40px, -33px);
+    color: rgb(141, 155, 224);
+}
+.page01 .nav .links {
+    position: relative;
+    top: 30%;
+    margin-left: 50%;
+    transition-duration: 0.4s;
+}
+.page01 .nav .links a {
+    align-items: center;
+    color: #dc975e;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 40px;
+}
+.page01 .nav .link-icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 35%;
+    right: -10%;
+    transition-duration: 0.4s;
+}
+.page01 .info {
+    transform: translate(0, 120px);
+    margin-left: 100px;
+}
+.page01 .info h1 {
+    font-size: 60px;
+    color: rgb(207, 78, 78);
+}
+.page01 .info p {
+    font-size: 25px;
+    color: white;
+}
+.page01 .info button {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-size: 20px;
+    width: 170px;
+    height: 75px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .page01 .nav .links a {
+        display: none;
+    }
+}
+
+
+/* PAGE 02 */
+.page02 {
+    height: 570px;
+    width: 100%;
+    background-color: antiquewhite;
+    margin-top: -50px;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+.page02 .head {
+    font-size: 45px;
+    color: black;
+    transform: translate(0, 150px);
+    transition-duration: 0.4s;
+}
+.page02 .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+}
+.page02 .box {
+    width: 350px;
+    height: 230px;
+    background-color: white;
+    color: inherit;
+    margin-right: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transform: translate(0, 190px);
+    box-shadow: 0 0 6px grey;
+    transition-duration: 0.4s;
+}
+@media screen and (max-width: 768px) {
+    .page02 {
+        height: 1090px;
+    }
+    .page02 .boxes {
+        flex-direction: column;
+        margin-top: -50px;
+    }
+    .page02 .box {
+        margin-top: 30px;
+    }
+    .page02 .head {
+        font-size: 40px;
+    }
+}
+.page02 .box h1 {
+    font-size: 30px;
+    margin-top: 40px;
+}
+.page02 .box p {
+    font-size: 20px;
+}
+
+/* PAGE 03 */
+.page03 {
+    height: 750px;
+    width: 100%;
+    background-color: antiquewhite;
+    background-size: cover; 
+    transition-duration: 0.4s;
+}
+.page03-details {
+    display: flex;
+    flex-direction: row;
+}
+.page03 .words {
+    width: 300px;
+    height: 450px;
+    transform: translate(50px, 100px);
+}
+.page03 .words .head {
+    font-size: 55px;
+    color: black;
+}
+.page03 .words .other {
+    font-size: 20px;
+    color: inherit;
+}
+.page03 .pic-container {
+    width: 90%;
+}
+.page03 .pic {
+    width: 90%;
+    height: 450px;
+    border-radius: 20px;
+    transform: translate(100px, 100px);
+    background-image: url(../images/qbank-pic03.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 0 10px black;
+}
+@media screen and (max-width: 990px) { 
+    .page03 .pic {
+        margin-right: 20%;
+    }
+}
+@media screen and (max-width: 940px) { 
+    .page03 .pic {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 800px) { 
+    .page03 .pic {
+        width: 95%;
+        height: 500px;
+        /* margin-left: -10px; */
+    }
+    .page03 .outside-the-box {
+        display: none;
+    }
+    .page03 .inside-the-box {
+        color: white;
+    }
+    .page03 .inside-the-box .head {
+        color: white;
+    }
+}
+@media screen and (min-width: 800px) { 
+    .page03 .pic {
+        width: 76%;
+    }
+    .page03 .inside-the-box {
+        display: none;
+    }
+}
+@media screen and (max-width: 512px) { 
+    .page03 .pic {
+        margin-left: -65px;
+    }
+}
+@media screen and (min-width: 512px) { 
+    .page03 .pic {
+        margin-left: 6%;
+    }
+}
+
+/* PAGE 04 */
+.page04 {
+    height: 700px;
+    width: 100%;
+    background-color: antiquewhite;
+    background-size: cover;
+    text-align: center;
+    margin-top: -50px;
+}
+.page04 .head {
+    font-size: 50px;
+    color: black;
+}
+.page04 .faqs {
+    width: 85%;
+    margin-left: 10%;
+    margin-right: 5%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.page04 .faqs .faq {
+    width: 85%;
+    background-color: white;
+    border-radius: 20px;
+    color: inherit;
+    padding: 10px 20px 10px 40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: left;
+    transition: all 0.6s ease-out;
+    cursor: default;
+    box-shadow: 0 0 6px grey;
+}
+.page04 .faqs .faq p {
+    transition-duration: .4s;
+}
+@media screen and (max-width: 768px) {
+    .page04 .faqs .faq p {
+      font-size: 20px;
+    }
+    .page04 .faqs {
+        margin-left: 8%;
+        margin-right: 7%;
+    }
+  }
+.page04 .faqs .faq.active img {
+    transform: rotate(180deg);
+    transition-duration: .4s;
+}
+.page04 .faqs .faq img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 80%;
+    transition: transform 0.4s ease-in-out;
+}
+@media screen and (max-width: 544px) {
+    .page04 .faqs .faq img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 80%;
+        transition: transform 0.4s ease-in-out;
+    }
+}
+.page04 .faqs .faq-details {
+    display: none;
+}
+.page04 .faqs .faq.active .faq-details {
+    display: block;
+}
+.page04 .faqs .faq .faq-details  {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* PAGE 05 */
+.page05 {
+    height: 600px;
+    width: 100%;
+    background-image: url(../images/qbank-pic-04.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.page05 .boxes {
+    width: 100%;
+}
+.page05 .container {
+    display: flex;
+    flex-direction: row;
+    height: 230px;
+    padding-top: 80px;
+    padding-left: 35%;
+}
+@media screen and (max-width: 768px) {
+    .page05 .container .box p,
+    .page05 .container-2 .box p {
+        font-size: 17px;
+    }
+    .page05 .container .box h1,
+    .page05 .container-2 .box h1 {
+        font-size: 20px;
+    }
+    .page05 .container,
+    .page05 .container-2 {
+        padding-left: 9%;
+    }
+    .page05 .container .box:first-child,
+    .page05 .container-2 .box:first-child {
+        margin-right: 40px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .page05 .container {
+        margin-left: 25%;
+    }
+    .page05 .container .box p{
+        font-size: 17px;
+    }
+    .page05 .container {
+        padding-left: 9%;
+    }
+    .page05 .container .box:first-child {
+        margin-right: 40px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .page05 .container-2 .box p {
+        font-size: 17px;
+    }
+    .page05 .container-2 {
+        padding-left: 9%;
+        margin-right: 25%;
+    }
+    .page05 .container-2 .box:first-child {
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .page05 .container .box h1,
+    .page05 .container-2 .box h1 {
+        font-size: 20px;
+    }
+}
+.page05 .container-2 {
+    display: flex;
+    flex-direction: row;
+    height: 230px;
+}
+.page05 .container .box {
+    width: 40%;
+    height: 200px;
+    background-color: white;
+    color: inherit;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px grey;
+}
+.page05 .container .box:first-child {
+    margin-left: 0;
+}
+.page05 .container-2 .box {
+    width: 40%;
+    height: 200px;
+    background-color: white;
+    color: inherit;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px grey;
+}
+.page05 .box h1 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+.page05 .box p {
+    font-size: 20px;
+}
+
+/* PAGE 06 */
+.page06 {
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+.page06 h1 {
+    font-size: 55px;
+    color: black;
+}
+
+.page06 .socials {
+    margin-top: 20px;
+}
+.page06 img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+    .page06 h1 {
+        font-size: 35px;
+    }
+    .page06 img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* PAGE 07  */
+.page07 {
+    height: 700px;
+    width: 100%;
+    background-color: antiquewhite;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+.page07 h1 {
+    font-size: 55px;
+    color: black;
+}
+
+.page07 form {
+    width: 70%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: column;
+}
+.page07 .form-inputs {
+    width: 100%;
+}
+.page07 .form-inputs input {
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 6px grey;
+    background-color: white;
+    font-size: 25px;
+    color: inherit;
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+    outline: none;
+}
+.page07 .form-inputs .name{
+    margin-right: 3%;
+}
+.page07 .form-inputs .email{
+    margin-right: 0;
+}
+.page07 .name-email {
+    display: flex;
+    justify-content: space-between;
+}
+.page07 .form-inputs .name,
+.page07 .form-inputs .email {
+    width: 43%;
+}
+.page07 .form-inputs .number {
+    width: 95.5%;
+}
+.page07 .form-inputs input:hover,
+.page07 .form-inputs textarea:hover {
+    box-shadow: 0 0 10px grey;
+    transform: scale(1.01);
+}
+
+.page07 .form-inputs textarea {
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 6px grey;
+    background-color: white;
+    font-size: 25px;
+    outline: none;
+    padding-top: 20px;
+    padding-left: 20px;
+    resize: vertical;
+    min-height: 100px;
+    overflow: scroll;
+    width: 97.5%;
+    display: flex;
+    justify-content: space-between;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+textarea::-webkit-scrollbar {
+    display: none;
+}
+.page07 button {
+    background-color: rgb(47, 255, 47);
+    color: white;
+    font-size: 25px;
+    width: 120px;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 6px grey;
+    margin-top: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.page07 button:hover {
+    box-shadow: 0 0 10px grey;
+    transform: scale(1.01);
+}
+@media screen and (max-width: 768px) {
+    .page07 h1 {
+        font-size: 35px;
+    }
+    .page07 .form-inputs input {
+        border-radius: 25px;
+        font-size: 20px;
+        padding: 15px 15px 15px 15px;
+    }
+    .page07 .form-inputs textarea {
+        border-radius: 25px;
+        font-size: 20px;
+        padding-top: 15px;
+        padding-left: 15px;
+        width: 95%;
+    }
+    .page07 .form-inputs .number {
+        width: 92.5%;
+    }
+    .page07 button {
+        font-size: 20px;
+        width: 100px;
+        padding: 15px 20px 15px 20px;
+        border-radius: 25px;
+    }
+    
+}
+
+
+/* FOOTER */
+.footer {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 15px
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
